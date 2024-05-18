@@ -11,6 +11,10 @@ body{
     color: #3A3A3A !important;
 }
 
+.txt-underline {
+    text-decoration: underline !important;
+}
+
 .bg-custom-secondary{
     background-color: #5631D5 !important;
 }
@@ -29,6 +33,9 @@ body{
 
 .font-size-20{
     font-size: 20px !important;
+}
+.font-size-24{
+    font-size: 24px !important;
 }
 .font-size-30{
     font-size: 30px !important;
@@ -61,6 +68,23 @@ body{
     font-weight: 700 !important; 
 }
 
+
+/* buttons */
+.transparent-btn-1{
+    border: 1px solid #2F3F50;
+    color: #2F3F50 !important;
+    border-radius: 5px;
+    background-color: transparent;
+    height: auto;
+}
+.custom-btn-charcoal{
+    background-color: #3A3A3A !important;
+    color: #FFFFFF !important; 
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+/* background images */
 .bannger-bg {
     background-image: url('../assets/images/banner.jpg');
     background-size: cover; 
@@ -82,25 +106,19 @@ body{
     padding: 0 !important;
   }
 
-.transparent-btn-1{
-    border: 1px solid #2F3F50;
-    color: #2F3F50 !important;
-    border-radius: 5px;
-    background-color: transparent;
-    height: auto;
-}
 
+/* background colors */
 .bg-charcoal{
     background-color: #3A3A3A !important;
-}
-
-.dollar-blue{
-    color: #5041FF !important;
 }
 .bg-reddish{
  background-color: #DB4444 !important;
 }
 
+/* text colors */
+.dollar-blue{
+    color: #5041FF !important;
+}
 .bold-color{
     color: #3A3A3A !important;
 }
@@ -113,3 +131,15 @@ body{
 .secondary-color{
     color: #5631D5 !important;
 }
+
+.nav-pills .nav-link.active {
+    border-bottom: 2px solid #007bff; 
+  }
+
+/* responsive  starts */
+@media (min-width: 1200px) {
+    .container {
+      padding-left: 65px; /* Adjust the margin as per your requirement */
+      padding-right: 65px;
+    }
+  }
