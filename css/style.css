@@ -135,3 +135,11 @@ body{
 .nav-pills .nav-link.active {
     border-bottom: 2px solid #007bff; 
   }
+
+/* responsive  starts */
+@media (min-width: 1200px) {
+    .container {
+      padding-left: 65px; /* Adjust the margin as per your requirement */
+      padding-right: 65px;
+    }
+  }
