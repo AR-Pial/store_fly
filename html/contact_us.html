@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body>
     <!-- top bar starts -->
@@ -140,10 +144,10 @@
     <main class="container pt-1 pt-lg-2 pb-3 pb-lg-5">
         <h3 class="font-montserrat-700 py-3 py-md-4 text-center">Contact Us</h3>
 
-        <img class="w-100" src="../assets/images/others/map.jpg" alt="">
-        <div class="row py-3 pt-lg-4 pb-lg-3 m-0 p-0">
+        <img class="w-100 wow animate__fadeInUp" data-wow-duration="1s" src="../assets/images/others/map.jpg" alt="">
+        <div class="row py-3 pt-lg-4 pb-lg-3 m-0 p-0"> 
             <!-- message section starts -->
-            <div class="col-12 col-lg-6 m-0 p-0">
+            <div class="col-12 col-lg-6 m-0 p-0 wow animate__fadeInLeft" data-wow-duration="1s">
                 <h4 class="pb-2">Leave Us a Message</h4>
                 <form class="px-2">
                     <div class="row justify-content-start">
@@ -168,7 +172,7 @@
             </div>
             <!-- message section ends -->
             <!-- call and write to us section starts -->
-            <div class="col-12 col-lg-6 row m-0 p-0">
+            <div class="col-12 col-lg-6 row m-0 p-0 wow animate__fadeInRight" data-wow-duration="1s">
                 <div class="col-12 col-lg-6">
                     <h4 class="pb-2">Call to Us:</h4>
                     <p class="py-1">
@@ -199,7 +203,7 @@
     </main>
     <hr class="bold-color w-100 m-0 p-0">
 
-    <footer>
+    <footer class="wow animate__fadeInUp" data-wow-duration="1s">
         <!-- upper footer starts -->
         <div class="row w-100 m-0 py-3 py-lg-4">
             <div class="col-12 col-lg-7 px-2 px-5 ">
@@ -315,6 +319,11 @@
         </div>
         <!-- lower footer ends -->
     </footer>
+
+    <script>
+        // Initialize Wow.js
+        new WOW().init();
+    </script>
 
     <!-- Bootstrap JS 5.0.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

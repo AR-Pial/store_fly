@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body>
     <!-- top bar starts -->
@@ -140,7 +144,7 @@
     <main class="container pt-1 pt-lg-2 pb-3 pb-lg-5">
         <h3 class="font-montserrat-700 py-3 py-md-4 text-center">Cart</h3>
         <div class="row pb-md-3">
-            <div class="col-12 col-md-7 pe-md-4">
+            <div class="col-12 col-md-7 pe-md-4 wow animate__fadeInLeft" data-wow-duration="1s">
                 <hr class="bold-color w-100 m-0 p-0">
                 <div class="row py-3 py-md-4">
                     <img class="col col-md-2" src="../assets/images/others/small_bag.png" alt="">
@@ -179,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 wow animate__fadeInRight" data-wow-duration="1s">
                 <div class="d-flex flex-column py-2 py-md-4 px-3 px-md-5 border border-1 rounded-3">
                     <h5 class="font-montserrat-700 pb-2 pb-md-2">Cart totals</h5>
                     <hr class="bold-color w-100 m-0 p-0">
@@ -204,7 +208,7 @@
     </main>
     <hr class="bold-color w-100 m-0 p-0">
 
-    <footer>
+    <footer class="wow animate__fadeInUp" data-wow-duration="1s">
         <!-- upper footer starts -->
         <div class="row w-100 m-0 py-3 py-lg-4">
             <div class="col-12 col-lg-7 px-2 px-5 ">
@@ -320,6 +324,11 @@
         </div>
         <!-- lower footer ends -->
     </footer>
+
+    <script>
+        // Initialize Wow.js
+        new WOW().init();
+    </script>
 
     <!-- Bootstrap JS 5.0.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
