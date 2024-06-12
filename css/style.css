@@ -9,18 +9,21 @@ a{
     text-decoration: none !;
 }
 
+.txt-underline {
+    text-decoration: underline !important;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400 !important; 
     color: #3A3A3A !important;
     /* scroll-behavior: smooth !important; */
 }
-
-
 textarea {
     resize: none;
 }
 
+/* navbar starts */
 .nav-link:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -28,14 +31,6 @@ textarea {
 
 .nav-item a{
     color: #3A3A3A !important;
-}
-
-.dropdown-menu > li > a:hover {
-    background-color: transparent !important;
-}
-.dropdown-item {
-    display: inline-block; 
-    width: auto;
 }
 
 .nav-item a {
@@ -68,15 +63,16 @@ textarea {
     width: auto;
 }
 
-
-.txt-underline {
-    text-decoration: underline !important;
+.dropdown-menu > li > a:hover {
+    background-color: transparent !important;
 }
-
-.bg-custom-secondary{
-    background-color: #5631D5 !important;
+.dropdown-item {
+    display: inline-block; 
+    width: auto;
 }
+/* navbar ends */
 
+/* fonts and height starts */
 .font-size-12{
     font-size: 12px !important;
 }
@@ -128,24 +124,9 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700 !important; 
 }
+/* fonts and height ends */
 
-.product:hover{
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-}
-
-.nav-icon:hover{
-    transform: scale(1.06);
-    transition: transform 0.2s ease-in-out;
-}
-
-.blog:hover{
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-}
-
-
-/* buttons */
+/* buttons starts */
 .transparent-btn-1, .transparent-span{
     border: 1px solid #2F3F50;
     color: #2F3F50 !important;
@@ -163,6 +144,8 @@ textarea {
     border: none !important;
     border-radius: 5px !important;
 }
+
+/* buttons ends */
 
 /* background images */
 .bannger-bg {
@@ -185,6 +168,11 @@ textarea {
 
 
 /* background colors */
+
+.bg-custom-secondary{
+    background-color: #5631D5 !important;
+}
+
 .bg-charcoal{
     background-color: #3A3A3A !important;
 }
@@ -192,7 +180,7 @@ textarea {
  background-color: #DB4444 !important;
 }
 
-/* text colors */
+/*  colors strats */
 .dollar-blue{
     color: #5041FF !important;
 }
@@ -212,7 +200,28 @@ textarea {
 .border-cs-secondary{
     border: 100px solid #5631D5 !important;
 }
+/*  colors ends */
 
+/* products starts */
+.product:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-icon:hover{
+    transform: scale(1.06);
+    transition: transform 0.2s ease-in-out;
+}
+/* products ends */
+
+/* blog starts */
+.blog:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+/* blog ends */
+
+
+/* others */
 .custom-alert-1{
     border-radius: 5px;
     border: 1px solid  #5631D5;
