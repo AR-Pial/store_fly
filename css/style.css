@@ -5,6 +5,10 @@
     text-decoration: none !important;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 a{
     text-decoration: none !important;
 }
@@ -154,6 +158,9 @@ textarea {
     border: none !important;
     border-radius: 5px !important;
 }
+.btn-padding{
+    padding: 12.5px 35px !important;
+}
 
 /* buttons ends */
 
@@ -172,10 +179,7 @@ textarea {
     background-image: url('../assets/images/spotlight.png'); 
     background-size: cover; 
     background-position: center; 
-    
-    
   }
-
 
 /* background colors */
 
@@ -232,12 +236,19 @@ textarea {
 
 
 /* others */
+
+
+.wow.animate__fadeIn {
+    animation-duration: 1.3s !important;
+    animation-timing-function: ease-in-out; /* Customize easing here */
+  }
+
+
 .custom-alert-1{
     border-radius: 5px;
     border: 1px solid  #5631D5;
     background: rgba(86, 49, 213, 0.10);
 }
-
 
 .nav-pills .nav-link.custom-tab.active {
     border-bottom: 2px solid #007bff; 
@@ -270,6 +281,10 @@ textarea {
 }
 
 @media (min-width: 1200px) {
+    .w-lg-50{
+        width: 50% !important;
+    }
+
     .bannger-bg {
         min-height: 78vh;
     }
@@ -278,10 +293,20 @@ textarea {
         padding: 0 !important;
         min-height: 400px !important;
     }
+    .padding-top-lg-5{
+        padding-top: 36px !important;
+    }
+
+    .padding-bottom-lg-5{
+        padding-bottom: 36px !important;
+    }
     
     .container {
       padding-left: 65px !important; 
       padding-right: 65px !important;
+    }
+    .width-lg-auto{
+        width: auto !important;
     }
     .width-lg-80{
         width: 80% !important;
