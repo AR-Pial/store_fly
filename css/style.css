@@ -238,11 +238,10 @@ textarea {
 /* others */
 
 
-.wow.animate__fadeIn {
+/* .wow.animate__fadeIn {
     animation-duration: 1.3s !important;
-    animation-timing-function: ease-in-out; /* Customize easing here */
-  }
-
+    animation-timing-function: ease-in-out; 
+} */
 
 .custom-alert-1{
     border-radius: 5px;
