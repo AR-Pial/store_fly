@@ -45,6 +45,22 @@ textarea {
 .nav-item a::after {
     content: '';
     position: absolute;
+    bottom: -.5px;
+    left: 50%;
+    width: 0;
+    height: 1.6px; 
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; 
+    transform: translateX(-50%);
+}
+
+.bottom-nav-item {
+    position: relative;
+    display: inline-block;
+}
+.bottom-nav-item ::after {
+    content: '';
+    position: absolute;
     bottom: -2px;
     left: 50%;
     width: 0;
@@ -217,13 +233,29 @@ textarea {
 /*  colors ends */
 
 /* products starts */
-.product:hover{
-    transform: scale(1.02);
+/* .product:hover{
+    transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
+} */
+/* .product {
+    transition: transform 0.6s ease-in-out;
 }
+
+.product:hover {
+    transform: scale(1.03);
+} */
+.product {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .nav-icon:hover{
-    transform: scale(1.06);
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 /* products ends */
 
@@ -276,12 +308,19 @@ textarea {
     }
     .spotlight-bg {
         min-height: 400px !important;
-    }  
+    } 
 }
 
 @media (min-width: 1200px) {
     .w-lg-50{
         width: 50% !important;
+    }
+    .font-size-lg-41{
+        font-size: 41px !important;
+    }
+
+    .font-size-lg-20{
+        font-size: 20px !important;
     }
 
     .bannger-bg {
@@ -300,9 +339,9 @@ textarea {
         padding-bottom: 36px !important;
     }
     
-    .container {
-      padding-left: 65px !important; 
-      padding-right: 65px !important;
+    .custom-container {
+      margin-left: 14% !important; 
+      margin-right: 14% !important;
     }
     .width-lg-auto{
         width: auto !important;
