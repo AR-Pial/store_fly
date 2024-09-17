@@ -25,12 +25,27 @@ a{
     text-decoration: underline !important;
 }
 
-
 textarea {
     resize: none;
+    min-height: 140px !important;
 }
 
+input.form-control{
+    min-height: 44px !important;
+}
+
+select{
+    min-height: 44px !important;
+}
+
+.margin-top-30{
+    margin-top: 30px !important;
+}
 /* navbar starts */
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none; 
+}
 .topbar-height{
     height: 40px !important;
 }
@@ -177,12 +192,23 @@ textarea {
 /* fonts and height ends */
 
 /* buttons starts */
+.transparent-span{
+    border: 1.2px solid #2F3F50;
+    color: #2F3F50 !important;
+    border-radius: 5px;
+    background-color: transparent;
+    min-height: 44px !important;
+    display: inline-block !important;
+}
 .transparent-btn-1, .transparent-span{
     border: 1.2px solid #2F3F50;
     color: #2F3F50 !important;
     border-radius: 5px;
     background-color: transparent;
-    height: auto;
+    min-height: 44px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .transparent-btn-1:hover{
@@ -194,6 +220,10 @@ textarea {
     color: #FFFFFF !important; 
     border: none !important;
     border-radius: 5px !important;
+    min-height: 44px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .custom-btn-charcoal:hover{
     background-color: #5631D5 !important;
@@ -269,7 +299,7 @@ textarea {
     transform: scale(1.03);
 } */
 .product {
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: transform 0.1s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .product:hover {
