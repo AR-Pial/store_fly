@@ -191,7 +191,7 @@
     </nav>
     <!-- navbar ends -->
     <hr class="bold-color w-100 m-0 p-0">
-
+    <!-- main section starts -->
     <main class="container pb-3 pb-lg-5">
         <!-- breadcrumb starts -->
         <div class="my-4 my-lg-5 p-0" data-aos="fade-up" data-aos-delay="100">
@@ -387,22 +387,22 @@
         <!-- may like starts -->
         <h4 class="pb-3 pb-lg-4" data-aos="fade-up" data-aos-delay="100">You May Also Like</h4>
         <div class="row   gy-2" >
-            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="100"> 
+            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="150"> 
                 <img class="product w-100 my-1" src="../assets/images/popular/Image.png" alt="">
                 <p class="my-2 mt-3 mb-1 font-size-16 font-montserrat-700 bold-color">Chloe Penelope Bag</p>
                 <p class="mb-0"><span class="font-montserrat-400 me-2">$3,090</span></p>
             </a>
-            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="200"> 
+            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="150"> 
                 <img class="product w-100 my-1" src="../assets/images/popular/Image2.png" alt="">
                 <p class="mt-3 mb-1 font-size-16 font-montserrat-700 bold-color">Dolcegab & Bana Sandals</p>
                 <p class="mb-0"><span class="font-montserrat-400 me-2">$260</span></p>
             </a>
-            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="300"> 
+            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="150"> 
                 <img class="product w-100 my-1" src="../assets/images/popular/Image3.png" alt="">
                 <p class="my-2 mt-3 mb-1 font-size-16 font-montserrat-700 bold-color">Saint Laurent Bag</p>
                 <p class="mb-0"><span class="font-montserrat-400 me-2">$3,550</span></p>
             </a>
-            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="400"> 
+            <a class="col-6 col-md-4 col-lg-3" href="../html/product.html" data-aos="fade-up" data-aos-delay="150"> 
                 <img class="product w-100 my-1" src="../assets/images/popular/Image4.png" alt="">
                 <p class="my-2 mt-3 mb-1 font-size-16 font-montserrat-700 bold-color">Gucci Espadrille Sandals</p>
                 <p class="mb-0"><span class="font-montserrat-400 me-2">$890</span></p>
@@ -410,6 +410,7 @@
         </div>
         <!-- may like ends -->
     </main>
+    <!-- main section ends -->
     
     <div class="w-100 m-0 p-0">
         <hr class="bold-color">
@@ -563,6 +564,7 @@
             anchorPlacement: 'top-bottom',
         });
     </script>
+    <script src="../js/index.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -582,24 +584,6 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var navLinks = document.querySelectorAll('.nav-link');
-            var currentUrl = window.location.href;
 
-            navLinks.forEach(function(navLink) {
-                if (navLink.href === currentUrl) {
-                    navLink.classList.add('active');
-                    var dropdownItemParent = navLink.closest('.dropdown');
-                    if (dropdownItemParent) {
-                        var dropdownToggle = dropdownItemParent.querySelector('.nav-link');
-                        if (dropdownToggle) {
-                            dropdownToggle.classList.add('active');
-                        }
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>

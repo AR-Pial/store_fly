@@ -98,10 +98,10 @@ select{
 .nav-item a.active::after {
     width: 100%;
 } 
-
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a{
     background-color: transparent !important;
 }
+
 .dropdown-item {
     display: inline-block; 
     width: auto;

@@ -201,42 +201,42 @@
             <!-- blogs starts -->
             <div class="row gy-4 gy-lg-5">
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="200">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog pb-2 mb-1 w-100" src="../assets/images/blogs/01.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Journey Through Words: Exploring Life's Depths One Post at a Time</p>
                 </a>
                 <!-- card ends -->
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="300">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog blog pb-2 mb-1 w-100" src="../assets/images/blogs/02.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Musings in Motion: Capturing Life's Essence Through a Single Post</p>
                 </a>
                 <!-- card ends -->
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="400">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog pb-2 mb-1 w-100" src="../assets/images/blogs/03.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Echoes of Experience: A Singular Voice in the Blogosphere</p>
                 </a>
                 <!-- card ends -->
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="500">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog pb-2 mb-1 w-100" src="../assets/images/blogs/04.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Chronicles of Contemplation: A Brief Glimpse into Life's Tapestry</p>
                 </a>
                 <!-- card ends -->
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="600">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog pb-2 mb-1 w-100" src="../assets/images/blogs/05.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Whispers from Within: Unveiling Truths in a Single Post</p>
                 </a>
                 <!-- card ends -->
                 <!-- card starts -->
-                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="700">
+                <a class="col-6 col-lg-4 ps-lg-0 pe-lg-4 bold-color" href="./blog_details.html" data-aos="fade-up" data-aos-delay="150">
                     <img class="blog pb-2 mb-1 w-100" src="../assets/images/blogs/06.jpg" alt="">
                     <p class="font-montserrat-400 mt-2 mb-2">April 27, 2024</p>
                     <p class="font-montserrat-700 my-0">Snapshots of Insight: Illuminating Moments in a Single Blog Entry</p>
@@ -400,25 +400,7 @@
     <!-- Bootstrap JS 5.0.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var navLinks = document.querySelectorAll('.nav-link');
-            var currentUrl = window.location.href;
-
-            navLinks.forEach(function(navLink) {
-                if (navLink.href === currentUrl) {
-                    navLink.classList.add('active');
-                    var dropdownItemParent = navLink.closest('.dropdown');
-                    if (dropdownItemParent) {
-                        var dropdownToggle = dropdownItemParent.querySelector('.nav-link');
-                        if (dropdownToggle) {
-                            dropdownToggle.classList.add('active');
-                        }
-                    }
-                }
-            });
-        });
-    </script>
+    <script src="../js/index.js"></script>
 
 </body>
 </html>
