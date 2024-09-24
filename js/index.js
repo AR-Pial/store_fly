@@ -32,4 +32,51 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+
+    
+    // Offset Search
+    var ofstsearchIcon = document.querySelector('#ofstsearchIcon');
+    var ofstsearchBox = document.querySelector('#ofstsearchBox');
+
+    if (ofstsearchIcon && ofstsearchBox) {
+        ofstsearchIcon.addEventListener('click', function (event) {
+            // Log when clicked
+            event.preventDefault(); // Prevent default anchor behavior
+            console.log("Search icon clicked");
+            // Toggle the d-none class to show/hide the search box
+            ofstsearchBox.classList.toggle('d-none');
+        });
+    } else {
+        console.error("Search icon or search box not found!");
+    }
+
+    // Search functionality
+    var searchIcon = document.querySelector('#searchIcon');
+    var searchBox = document.querySelector('#searchBox');
+
+    if (searchIcon && searchBox) {
+        searchIcon.addEventListener('click', function (event) {
+            // Log when clicked
+            event.preventDefault(); // Prevent default anchor behavior
+            console.log("Search icon clicked");
+            // Toggle the d-none class to show/hide the search box
+            searchBox.classList.toggle('d-none');
+        });
+    } else {
+        console.error("Search icon or search box not found!");
+    }
+
+    // Hide search box when clicking outside
+    document.addEventListener('click', function (event) {
+        var clickedInsideSearchBox = ofstsearchBox.contains(event.target) || searchBox.contains(event.target);
+        var clickedOnSearchIcon = event.target.closest('#ofstsearchIcon') || event.target.closest('#searchIcon');
+        
+        // If the click is outside both the search boxes and search icons, hide them
+        if (!clickedInsideSearchBox && !clickedOnSearchIcon) {
+            ofstsearchBox.classList.add('d-none');
+            searchBox.classList.add('d-none');
+        }
+    });
+
+
 });

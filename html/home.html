@@ -16,12 +16,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <style>
+        .search-box {
+            /* Optional styling for the search box */
+            width: 300px; /* Set a width as needed */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+        }
+    </style>
 </head>
 <body>
     <!-- top bar starts -->
-    <div class="topbar-height bg-custom-secondary d-none d-lg-flex justify-content-center align-items-center py-3 w-100">
-        <span class="font-size-14 text-white font-montserrat-500">Get Early Bird Discount On StoreFlyWP Themes Get 30% " Startup30"</span>
+    <div id="topbar" class="my-0 topbar-height bg-custom-secondary alert alert-dismissible fade show d-none d-lg-flex justify-content-center align-items-center py-3 w-100 rounded-0"  role="alert">
+        <span class="font-size-14 text-white font-montserrat-500">
+            Get Early Bird Discount On StoreFlyWP Themes Get 30% "Startup30"
+        </span>
+        <button type="button" class="btn p-0 position-absolute end-0 me-4 pe-2 text-muted" data-bs-dismiss="alert" aria-label="Close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#B0B0B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.16992 14.83L14.8299 9.17004" stroke="#B0B0B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.8299 14.83L9.16992 9.17004" stroke="#B0B0B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                    
+        </button>
     </div>
     <!-- top bar ends -->
     <svg style="display: none;">
@@ -75,7 +90,7 @@
         </symbol>
     </svg>
     <!-- navbar starts -->
-    <nav class="navbar-height navbar navbar-expand-lg navbar-light px-2 px-lg-4 py-3 py-lg-4 w-100 d-flex justify-content-between align-items-center">
+    <nav class="navbar-height navbar navbar-expand-lg navbar-light ps-0 pe-2 px-lg-4 py-3 py-lg-4 w-100 d-flex justify-content-between align-items-center">
         <div class="container-fluid col d-inline-block">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -83,9 +98,9 @@
             <!-- small Screen offcanvas starts -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <!-- offcanvas header starts -->
-                <div class="offcanvas-header d-flex justify-content-between">
+                <div class="offcanvas-header d-flex justify-content-between align-items-center py-4">
                     <!-- close button -->
-                    <button type="button" id="searchIcon" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <!-- logo -->
                     <a class="d-inline-block" href="../html/home.html">
                         <span class="">
@@ -94,45 +109,47 @@
                             </svg>                    
                         </span>
                     </a>
-
-                    <div class="d-flex gap-3 justify-content-end d-inline-block position-relative">
-                        <!-- search Icon -->
-                        <a class="nav-icon" href="#" id="searchIcon" data-bs-toggle="collapse" data-bs-target="#searchBox" aria-expanded="false" aria-controls="searchBox">
+                    <div class="d-flex gap-3 pe-2">
+                        <!-- offcanvas seach Icon -->
+                        <a id="ofstsearchIcon" class="nav-icon" href="#" >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17C14.0899 17 17 14.0899 17 10.5C17 6.91015 14.0899 4 10.5 4C6.91015 4 4 6.91015 4 10.5C4 14.0899 6.91015 17 10.5 17Z" stroke="#2F3F50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M21 21L17 17" stroke="#2F3F50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        
-                        <!-- search Box -->
-                        <div id="searchBox" class="collapse start-0 w-100 position-fixed mt-4 py-4" style="background-color: rgba(255, 255, 255, 0.95); z-index: 9999;">
-                            <div class="container bg-white">
-                                <div class="d-flex w-100">
-                                    <input type="text" class="form-control border-dark" placeholder="Search">
-                                    <button class="custom-btn-charcoal font-size-12 btn-padding ms-3">
-                                        <span>
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                         <!-- cart -->
-                        <a class="nav-icon position-relative" href="./cart.html"> 
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.99983 22H14.9998C19.0198 22 19.7398 20.39 19.9498 18.43L20.6998 12.43C20.9698 9.99 20.2698 8 15.9998 8H7.99983C3.72983 8 3.02983 9.99 3.29983 12.43L4.04983 18.43C4.25983 20.39 4.97983 22 8.99983 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.4955 12H15.5045" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8.49451 12H8.50349" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-cart_item  text-dark">
-                                3 
-                            </span>
-                        </a>  
+                        <div class="d-flex gap-3 justify-content-end d-inline-block position-relative">
+                            
+                            <a class="nav-icon position-relative" href="./cart.html"> 
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.99983 22H14.9998C19.0198 22 19.7398 20.39 19.9498 18.43L20.6998 12.43C20.9698 9.99 20.2698 8 15.9998 8H7.99983C3.72983 8 3.02983 9.99 3.29983 12.43L4.04983 18.43C4.25983 20.39 4.97983 22 8.99983 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.4955 12H15.5045" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.49451 12H8.50349" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-cart_item  text-dark">
+                                    3 
+                                </span>
+                            </a>  
+                        </div>
                     </div>
                     
+                </div>
+                <!-- offcanvas Search Box -->
+                <div id="ofstsearchBox" class="w-100 position-relative pb-3 d-none">
+                    <div class="container bg-white">
+                        <div class="d-flex w-100">
+                            <input type="text" class="form-control border-dark" placeholder="Search">
+                            <button class="custom-btn-charcoal font-size-12 btn-padding ms-3">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5 17C14.0899 17 17 14.0899 17 10.5C17 6.91015 14.0899 4 10.5 4C6.91015 4 4 6.91015 4 10.5C4 14.0899 6.91015 17 10.5 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 21L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                           
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <!-- offcanvas body starts -->
                 <hr class="bold-color w-100 m-0 p-0">
@@ -155,7 +172,7 @@
                                 </svg>     
                             </a>
                         
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu px-3 py-1 border-0" aria-labelledby="dropdownMenuLink">
                                 <li><a class="dropdown-item nav-link p-0 my-1" href="../html/product.html">Products</a></li>
                                 <li><a class="dropdown-item nav-link p-0 my-1" href="#">About</a></li>
                                 <li><a class="dropdown-item nav-link p-0 my-1" href="../html/blog.html">Blog</a></li>
@@ -176,7 +193,7 @@
             </div>
             <!-- small screen offcanvas ends --> 
             <!-- large Screen navbar starts -->
-            <div class="collapse navbar-collapse d-none d-lg-block pt-3 pt-lg-0" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse d-none d-lg-block align-items-center pt-3 pt-lg-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link font-montserrat-400 font-size-16 mx-2 p-0" href="../html/home.html">Home</a>
@@ -213,30 +230,16 @@
                 </svg>                    
             </span>
         </a>
-        <div class="col d-flex gap-3 justify-content-end d-inline-block pe-2 pe-md-3">
-            <!-- search icon -->
-            <a class="nav-icon" href="#" id="searchIcon" data-bs-toggle="collapse" data-bs-target="#searchBox" aria-expanded="false" aria-controls="searchBox">
+        <!-- large Screen navbar ends --> 
+        <!-- common navbar starts -->   
+        <div class="col d-flex gap-3 justify-content-end d-inline-block pe-3 pe-md-4">
+            <!-- search Icon -->
+            <a id="searchIcon" class="searchIcon nav-icon" href="#" >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.5 17C14.0899 17 17 14.0899 17 10.5C17 6.91015 14.0899 4 10.5 4C6.91015 4 4 6.91015 4 10.5C4 14.0899 6.91015 17 10.5 17Z" stroke="#2F3F50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21 21L17 17" stroke="#2F3F50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </a>
-            <!-- search box -->
-            <div id="searchBox" class="collapse start-0 w-100 position-fixed mt-4 py-4" style="background-color: rgba(255, 255, 255, 0.95); z-index: 9999;">
-                <div class="container bg-white">
-                    <div class="d-flex w-100">
-                        <input type="text" class="form-control border-dark" placeholder="Search">
-                        <button class="custom-btn-charcoal font-size-12 btn-padding ms-3">
-                            <span>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-                
+            </a>    
             <!-- profile -->
             <a class="nav-icon d-none d-lg-block" href="#">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +262,24 @@
                 </span>
             </a>  
         </div>
+        <!-- common navbar ends --> 
     </nav>
+    <!-- search Box -->
+    <div id="searchBox" class="searchBox w-100 pb-3 pb-lg-4 d-none">
+        <div class="container bg-white">
+            <div class="d-flex w-100">
+                <input type="text" class="form-control border-dark" placeholder="Search">
+                <button class="custom-btn-charcoal font-size-12 btn-padding ms-3">
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 17C14.0899 17 17 14.0899 17 10.5C17 6.91015 14.0899 4 10.5 4C6.91015 4 4 6.91015 4 10.5C4 14.0899 6.91015 17 10.5 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                           
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- navbar ends -->
     <hr class="bold-color w-100 m-0 p-0">
     <!-- banner starts -->
@@ -637,7 +657,6 @@
         <!-- lower footer ends -->
     </footer>
     <!-- footer ends -->
-    <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -653,6 +672,5 @@
     
     <script src="../js/index.js"></script>
 
-    
 </body>
 </html>
