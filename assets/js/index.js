@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set active class for dropdown items
     dropdownItems.forEach(function (dropdownItem) {
-        // console.log("Checking dropdownItem:", dropdownItem.href);
         if (dropdownItem.href === currentUrl) {
             dropdownItem.classList.add('active');
             // Find the parent dropdown toggle link
@@ -120,6 +119,30 @@ document.addEventListener("DOMContentLoaded", function () {
             blurOverlay.classList.add('d-none');
         }
     });
-
-
+    
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const zoomContainer = document.querySelector('.zoom-container');
+    const img = zoomContainer.querySelector('img');
+    
+    zoomContainer.addEventListener('mousemove', (event) => {
+        const { left, top, width, height } = zoomContainer.getBoundingClientRect();
+        const x = ((event.clientX - left) / width) * 100;
+        const y = ((event.clientY - top) / height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+    });
+    
+    zoomContainer.addEventListener('mouseleave', () => {
+        img.style.transformOrigin = 'center center';
+    });
+});
+
+
+
+
+
+
+
+
