@@ -327,20 +327,9 @@ select{
 }
 /*  colors ends */
 
-/* products starts */
-/* .product:hover{
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in-out;
-} */
-/* .product {
-    transition: transform 0.6s ease-in-out;
-}
 
-.product:hover {
-    transform: scale(1.03);
-} */
 .product {
-    transition: transform 0.1s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 
 .product:hover {
@@ -348,9 +337,32 @@ select{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.zoom-container {
+    position: relative;
+    overflow: hidden; 
+    display: inline-block; 
+}
+
+/* Image styles for zoom effect */
+.zoom-container img {
+    width: 100%;  
+    height: auto; 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    transform-origin: center center; 
+}
+.zoom-container:hover img {
+    transform: scale(1.75);
+}
+
+.zoom-container {
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+}
 .nav-icon:hover{
     transform: scale(1.1);
-    transition: transform 0.3s;
+    transition: transform 0.1s;
 }
 /* products ends */
 
@@ -363,13 +375,6 @@ select{
 
 
 /* others */
-
-
-/* .wow.animate__fadeIn {
-    animation-duration: 1.3s !important;
-    animation-timing-function: ease-in-out; 
-} */
-
 .custom-alert-1{
     border-radius: 5px;
     border: 1px solid  #5631D5;
@@ -379,6 +384,7 @@ select{
 .nav-pills .nav-link.custom-tab.active {
     border-bottom: 2px solid #007bff; 
   }
+
 
 /* responsive  starts */
 @media  (max-width: 599px) {
